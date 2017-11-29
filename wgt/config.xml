@@ -1,3 +1,2 @@
- <widget id="A6066244155577"  version="0.0.1">
-    <name>myFirstApp</name>    <content src="index.html" />    <preference name="windowBackground" value="#FFF"/>
+ <widget id="A6066415804787"  version="0.0.1">    <name>myFirstApp</name>    <content src="index.html" />    <preference name="windowBackground" value="#FFF"/>
 </widget>
