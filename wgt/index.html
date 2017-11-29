@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    div{
+      background-color: #f00;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+<script>
+  function openScanner(){
+    api.confirm({
+        title: 'MyFirstApp',
+        msg: '是否打开二维码扫描',
+        buttons: ['确定', '取消']
+    }, function(ret, err){
+        if( ret ){
+          var scanner = api.require("scanner");
+          scanner.open();
+        }else{
+             //
+        }
+    });
+  }
+</script>
+</head>
+<body>
+  <div onclick="openScanner()">
+    Hello myFirstApp
+  </div>
+</body>
+</html>
